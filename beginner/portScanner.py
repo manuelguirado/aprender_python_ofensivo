@@ -10,6 +10,8 @@ def scannerPorts(host,start_port, end_port ):
         if result == 0:
             #open ports
             print(f"port {port}: Open")
+            #generating an file with the open ports
+            openedFiles = open("port.txt", "w")
             sock.close
        
     except:
