@@ -8,6 +8,7 @@ def scannerPorts(host,start_port, end_port ):
              #Connect to the remote socket 
              result = sock.connect_ex((host,port))
         if result == 0:
+            #open ports
             print(f"port {port}: Open")
             sock.close
        
